@@ -18,10 +18,10 @@
 const express = require('express');
 const redis = require('redis');
 
-const REDISHOST = process.env.REDISHOST || '35.226.114.144';
+const REDISHOST = process.env.REDISHOST || 'xxxxxxxxxxxxx';
 const REDISPORT = process.env.REDISPORT || 6379;
 
-const client = redis.createClient({port: REDISPORT, host: REDISHOST, auth_pass: 'lmpb1234'});
+const client = redis.createClient({port: REDISPORT, host: REDISHOST, auth_pass: 'xxxxxxxx'});
 client.on('error', (err) => console.error('ERR:REDIS:', err));
 
 const app = express();
